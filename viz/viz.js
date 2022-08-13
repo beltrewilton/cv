@@ -1,0 +1,96 @@
+document.addEventListener('DOMContentLoaded', function() {
+
+  var container = document.querySelector('#graph');
+
+  var data = {
+    nodes: [
+{
+  id: 1,
+  shape: 'image',
+  image: 'https://lenguajehtml.com/img/html5-logo.png',
+  label: 'HTML5'
+},
+{
+  id: 2,
+  shape: 'image',
+  image: 'https://lenguajecss.com/img/css3-logo.png',
+  label: 'CSS3'
+},
+{
+  id: 3,
+  shape: 'image',
+  image: 'http://ryanchristiani.com/wp-content/uploads/2015/06/js-logo.png',
+  label: 'JS'
+},
+{
+  id: 4,
+  shape: 'image',
+  image: 'http://www.freeiconspng.com/uploads/less-icon-17.png',
+  label: 'LESS'
+},
+{
+  id: 5,
+  shape: 'image',
+  image: 'https://static.raymondcamden.com/images/2016/11/pug.png',
+  label: 'PUG'
+},
+{
+  id: 6,
+  shape: 'image',
+  image: 'https://cdn-images-1.medium.com/max/529/1*XmHUL5DeySv_dGmvbPqdDQ.png',
+  label: 'Babel'
+},
+{
+  id: 7,
+  shape: 'image',
+  image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/PostCSS_Logo.svg/2000px-PostCSS_Logo.svg.png',
+  label: 'PostCSS'
+},
+{
+  id: 8,
+  shape: 'image',
+  image: 'http://www.unixstickers.com/image/cache/data/stickers/bootstrap/xbootstrap.sh-340x340.png.pagespeed.ic.rjul6vd1jk.png',
+  label: 'Bootstrap'
+}
+    ],
+    edges: [
+      {from: 1, to: 2},
+      {from: 1, to: 3},
+      {from: 2, to: 4},
+      {from: 1, to: 5},
+      {from: 3, to: 6},
+      {from: 2, to: 7},
+      {from: 2, to: 8}
+    ]
+  }
+
+  var options = {
+    nodes: {
+      borderWidth:0,
+      size:42,
+      color: {
+        border: '#222',
+        background: 'transparent'
+      },
+      font: {
+        color: '#111',
+        face: 'Walter Turncoat',
+        size: 16,
+        strokeWidth: 1,
+        strokeColor: '#222'
+      }
+    },
+    edges: {
+      color: {
+        color: '#CCC',
+        highlight: '#A22'
+      },
+      width: 3,
+      length: 275,
+      hoverWidth: .05
+    }
+  }
+
+  var network = new vis.Network(container, data, options);
+
+});

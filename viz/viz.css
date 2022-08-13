@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Walter Turncoat';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/walterturncoat/v19/snfys0Gs98ln43n0d-14ULoToe6LZxeZ.ttf) format('truetype');
+}
+#graph {
+  width: 900px;
+  height: 80vh;
+  margin: auto;
+  /*   background:#EEE;
+  border:2px solid #DDD; */
+}

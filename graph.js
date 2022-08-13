@@ -40,7 +40,7 @@ networkSeries.data = [{
   x: am4core.percent(40),
   y: am4core.percent(50),
   children: [{
-    name: 'Berry',
+    name: 'BerryX',
     children: [{
       name: 'Blackberry', value: 1
     }, {
