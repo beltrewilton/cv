@@ -52,6 +52,9 @@ section{
     align-items: center;
     justify-content: space-between; */
 }
+#infoi {
+    padding-top: 80px;
+}
 section .title{
     position: relative;
     text-align: center;
@@ -1095,6 +1098,16 @@ footer .wave#wave4
 }
 
 @media (max-width: 991px) {
+    .home{
+        display: flex;
+        background: url("3d-render-network-communications-background-with-connecting-lines-dots.jpg") no-repeat center;
+        height: 100vh;
+        color: #fff;
+        min-height: 500px;
+        background-size:cover;
+        background-attachment:fixed;
+        font-family: 'Ubuntu', sans-serif;
+    }
     .max-width{
         padding: 0 50px;
     }
