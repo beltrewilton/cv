@@ -52,6 +52,9 @@ section{
     align-items: center;
     justify-content: space-between; */
 }
+.linkinpark {
+    font-size: 0.7em !important;
+}
 #infoi {
     padding-top: 80px;
 }
